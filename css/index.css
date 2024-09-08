@@ -1,9 +1,9 @@
 html, body {
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    max-height: 100%;
-    overflow-x: hidden; /*Evita el desplazamiento lateral de la pagina*/
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento lateral de la página */
 }
 
 body {
@@ -12,15 +12,14 @@ body {
     font-family: Arial, sans-serif; /* Establece la fuente del body */
     background-color: #617875;
     color: #333; /* Color del texto */
-    line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
-    margin: 0;
-    padding: 0;
+    line-height: 1.4; /* Altura de línea para mejorar la legibilidad */
     min-height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 header {
     background-color: #274c48;
-    padding: 1rem 0; /* Espaciado interno superior e inferior del encabezado */
+    padding: 10px 0; /* Espaciado interno superior e inferior del encabezado */
     text-align: center; /* Centra el texto dentro del encabezado */
 }
 
@@ -28,95 +27,92 @@ nav ul {
     list-style: none; /* Elimina los puntos de lista */
     display: flex;
     justify-content: center; /* Centra los elementos de navegación horizontalmente */
-    gap: 1.5rem; /* Espacio entre los elementos de navegación */
+    gap: 10px; /* Espacio entre los elementos de navegación */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem; 
+    font-size: 14px;
+    padding: 8px 12px; 
 }
 
 nav ul li a:hover {
     background-color: #e6d0a9; /* Color de fondo al pasar el mouse sobre los enlaces */
-    border-radius: 5px; /* Bordes redondeados de los enlaces al pasar el mouse */
+    border-radius: 4px; /* Bordes redondeados de los enlaces al pasar el mouse */
 }
 
 .portfolio {
     display: flex;
     justify-content: space-around; /* Espacia los elementos uniformemente */
     align-items: center; /* Alinea los elementos verticalmente */
-    padding: 2rem;
+    padding: 70px; /*arreglo*/
     background-color: #e6d0a9;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .foto-personal img {
-    width: 300px;
+    width: 200px;
     height: auto; /* Mantiene la proporción de las imágenes */
 }
 
 .columna-presentacion, .columna-logros {
     flex: 1;
-    margin: 1rem;
+    margin: 10px;
 }
 
 .columna-presentacion h1 {
-    font-size: 2rem;
+    font-size: 24px;
     color: #274c48;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .columna-logros h2 {
-    font-size: 1.5rem;
+    font-size: 18px;
     color: #274c48;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 .columna-logros ul {
     list-style: disc;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .resumen {
-    padding: 8rem;
+    padding: 73px; /*arreglo*/
     background-color: #f5e8c4;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .resumen h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: #274c48;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: relative;
-    bottom: 0;
+    padding: 10px;
     width: 100%; /* Asegura que el pie de página ocupe el ancho completo */
     margin-top: auto; /* Hace que el footer esté al fondo si hay poco contenido */
-}
-
-footer p {
-    margin: 0; /* Elimina el margen del párrafo en el pie de página */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 /* Responsive para dispositivos móviles */
 @media (max-width: 768px) {
     .portfolio {
         flex-direction: column;
-        padding: 1rem;
+        padding: 10px;
     }
 
     .foto-personal img {
         width: 100%;
-        max-width: 300px;
+        max-width: 200px;
     }
 
     .columna-presentacion, .columna-logros {
@@ -126,87 +122,90 @@ footer p {
 
     nav ul {
         flex-direction: column;
-        gap: 1rem;
+        gap: 10px;
     }
 
     nav ul li a {
-        font-size: 1rem;
+        font-size: 12px;
     }
 }
 
 @media (max-width: 400px) {
-    
     .columna-presentacion h1 {
-        font-size: 1.5rem;
+        font-size: 20px;
     }
 
     .columna-logros h2 {
-        font-size: 1.2rem;
+        font-size: 16px;
     }
 
     .resumen h2 {
-        font-size: 1.5rem;
+        font-size: 18px;
     }
 }
 
 /*CSS DE SOBRE MI*/
 .sobre-mi {
-    padding: 20px;
+    padding: 10px;
     max-width: 100%;
-    min-height: 100vh;
+    min-height: 83.8vh; /*arreglo*/
     margin: 0 auto;
-    background-color: #e6d0a9;
+    background-color: #f5e8c4;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .sobre-mi h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #333;
+    border-bottom: 2px solid #274c48;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #274c48;
     text-align: center;
-    font-size: 2rem;
+    font-size: 24px;
 }
 
 .sobre-mi ul {
     list-style-type: none;
     padding: 0;
+    margin-left: 20px; /*arreglo*/
 }
 
 .sobre-mi li {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .sobre-mi li p {
-    margin: 10px 0;
+    margin: 8px 0;
 }
+
 /*CSS DE CV*/
 .curriculum {
-    padding: 2rem;
+    padding: 20px;
     background-color: #f5e8c4;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .curriculum-title {
     text-align: center;
     color: #274c48;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 .contenido-resumido {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 15px;
 }
 
 .contenido-resumido section {
     background-color: #e6d0a9;
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 15px;
+    border-radius: 6px;
 }
 
 .contenido-resumido h2, .contenido-resumido h3 {
     color: #274c48;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .contenido-resumido ul {
@@ -215,13 +214,13 @@ footer p {
 }
 
 .contenido-resumido li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 
 .btn-download, .btn-online {
     display: inline-block;
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
+    margin-top: 10px;
+    padding: 10px 20px;
     background-color: #274c48;
     color: #fff;
     text-decoration: none;
@@ -236,116 +235,121 @@ footer p {
 .download-cv {
     text-align: center;
 }
+
 /*CSS DE SERVICIOS*/
 .servicios {
-    padding: 2rem;
+    padding: 8.2px 50px 8.2px 50px; /*arreglo*/
     background-color: #f5e8c4;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .servicios h1 {
     text-align: center;
     color: #274c48;
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 /* Lista de servicios */
 .lista-servicios {
     background-color: #e6d0a9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .lista-servicios h2 {
-    font-size: 1.8rem;
+    font-size: 20px;
     color: #274c48;
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .lista-servicios ul {
     list-style-type: square;
-    padding-left: 1.5rem;
+    padding-left: 15px;
 }
 
 .lista-servicios ul li {
-    font-size: 1.2rem;
+    font-size: 14px;
     color: #333;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 
 /* Detalles de los servicios */
 .descripcion-servicios {
     background-color: #e6d0a9;
-    padding: 1.5rem;
-    border-radius: 8px;
+    padding: 15px;
+    border-radius: 6px;
 }
 
 .descripcion-servicios h2 {
-    font-size: 1.8rem;
+    font-size: 20px;
     color: #274c48;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .servicio-detalle {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .servicio-detalle h3 {
-    font-size: 1.5rem;
+    font-size: 18px;
     color: #274c48;
-    margin-bottom: 0.5rem;
+    margin-bottom: 5px;
 }
 
 .servicio-detalle p {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.4;
     color: #333;
 }
 
 /*CSS DE CONTACTO*/
 /* Sección de contacto */
 .contacto {
-    padding: 3rem;
+    padding: 38px; /*arreglo*/
     background-color: #f5e8c4;
     text-align: center;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .contacto h1 {
-    font-size: 2.5rem;
+    font-size: 28px;
     color: #274c48;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
 }
 
 .contacto p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .contacto-grid {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 15px;
 }
 
 .info-contacto, .formulario-contacto {
     flex: 1;
-    padding: 2rem;
+    padding: 40px; /*arreglo*/
     background-color: #e6d0a9;
-    border-radius: 8px;
+    border-radius: 6px;
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
 }
 
 .info-contacto ul {
     list-style: none;
     padding-left: 0;
-    font-size: 1.2rem;
+    font-size: 14px;
 }
 
 .info-contacto ul li {
-    margin-bottom: 1rem;
+    margin-bottom: 10px;
 }
 
 .formulario-contacto form {
@@ -354,12 +358,12 @@ footer p {
 }
 
 .formulario-contacto .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 50px;
 }
 
 .formulario-contacto input, .formulario-contacto textarea {
     width: 100%;
-    padding: 0.75rem;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #fff;
@@ -367,7 +371,7 @@ footer p {
 }
 
 .formulario-contacto button {
-    padding: 0.75rem 1.5rem;
+    padding: 10px 20px;
     background-color: #274c48;
     color: #fff;
     border: none;
@@ -379,3 +383,4 @@ footer p {
     background-color: #f5e8c4;
     color: #274c48;
 }
+
