@@ -384,3 +384,56 @@ footer {
     color: #274c48;
 }
 
+#toggle-dark-mode {
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+/* Modo oscuro */
+body.dark-mode{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+body.dark-mode .portfolio,
+body.dark-mode .resumen,
+body.dark-mode .sobre-mi,
+body.dark-mode .servicios,
+body.dark-mode .contenido-resumido,
+body.dark-mode .curriculum {
+    background-color: #121212;
+    color: #e0e0e0;
+}  
+body.dark-mode header,
+body.dark-mode footer,
+body.dark-mode .formulario-contacto,
+body.dark-mode .info-contacto,
+body.dark-mode .datos-personales,
+body.dark-mode .formacion,
+body.dark-mode .experiencia-laboral,
+body.dark-mode .cursos,
+body.dark-mode .habilidades {
+    background-color: #333333;
+    color: #e0e0e0;
+}
+
+body.dark-mode nav ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode #toggle-dark-mode {
+    color: #ffd700; /* Icono del botón modo oscuro en modo oscuro */
+}
+
+body.dark-mode button,
+body.dark-mode .contacto {
+    background-color: #555555;
+    color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode button:hover {
+    background-color: #666666;
+}

@@ -16,10 +16,10 @@
                 <li><a href="resume-cv.html">Currículum</a></li>
                 <li><a href="services.html">Servicios</a></li>
                 <li><a href="contact.html">Contacto</a></li>
+                <li><button id="toggle-dark-mode">Cambiar modo🌙</button></li>
             </ul>
         </nav>
     </header>
-
     <!-- Sección de contacto -->
     <main>
         <section class="contacto">
@@ -41,21 +41,18 @@
                 <!-- Formulario de contacto -->
                 <div class="formulario-contacto">
                     <h2>Envíame un Mensaje</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Correo Electrónico:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
-                    </form>
+                    <form id="contactForm" class="contact-form">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                    
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    
+                        <button type="submit">Enviar</button>
+                    </form>                    
                 </div>
             </div>
         </section>
@@ -64,6 +61,7 @@
     <footer>
         <p>Derechos reservados &copy; 2024 | Contacto: degochine@uade.edu.ar</p>
     </footer>
+    <script src= "javascript/js.js"></script>   
 </body>
 </html>
 
